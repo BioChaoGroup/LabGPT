@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/nbt/rss/current">
+        <title>Nature Biotechnology</title>
+        <description>Nature Biotechnology is a monthly journal publishing new concepts in biological technology of relevance to bioengineering, medicine, energy, agriculture, food and the environment. It has a magazine covering the commercial, political, ethical, legal and societal aspects of this research.</description>
+        <link>http://feeds.nature.com/nbt/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2024 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Biotechnology</prism:publicationName>
+        
+        
+        <prism:copyright>© 2024 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/nbt/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02110-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02109-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02101-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02113-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02104-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02102-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02116-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-023-02093-z"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/nbt/rss.png">
+        <title>Nature Biotechnology</title>
+        <url>https://www.nature.com/uploads/product/nbt/rss.png</url>
+        <link>http://feeds.nature.com/nbt/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02110-1">
+            <title><![CDATA[KARR-seq maps higher-order RNA structures and RNA–RNA interactions across the transcriptome]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02110-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 18 January 2024; <a href="https://www.nature.com/articles/s41587-023-02110-1">doi:10.1038/s41587-023-02110-1</a></p>Mapping higher-order RNA structures and intermolecular RNA–RNA interactions throughout the transcriptome is critical for understanding RNA functions. We developed KARR-seq, a chemical-assisted RNA proximity capture and sequencing technology that enables sensitive and accurate detection of the RNA structurome and functional RNA–RNA interactions.]]></content:encoded>
+            <dc:title><![CDATA[KARR-seq maps higher-order RNA structures and RNA–RNA interactions across the transcriptome]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41587-023-02110-1</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-18; | doi:10.1038/s41587-023-02110-1</dc:source>
+            <dc:date>2024-01-18</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02110-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02110-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02109-8">
+            <title><![CDATA[KARR-seq reveals cellular higher-order RNA structures and RNA–RNA interactions]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02109-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 18 January 2024; <a href="https://www.nature.com/articles/s41587-023-02109-8">doi:10.1038/s41587-023-02109-8</a></p>RNA interactions and structures are determined with a chemical labeling and crosslinking method.]]></content:encoded>
+            <dc:title><![CDATA[KARR-seq reveals cellular higher-order RNA structures and RNA–RNA interactions]]></dc:title>
+            <dc:creator>Tong Wu</dc:creator><dc:creator>Anthony Youzhi Cheng</dc:creator><dc:creator>Yuexiu Zhang</dc:creator><dc:creator>Jiayu Xu</dc:creator><dc:creator>Jinjun Wu</dc:creator><dc:creator>Li Wen</dc:creator><dc:creator>Xiao Li</dc:creator><dc:creator>Bei Liu</dc:creator><dc:creator>Xiaoyang Dou</dc:creator><dc:creator>Pingluan Wang</dc:creator><dc:creator>Linda Zhang</dc:creator><dc:creator>Jingyi Fei</dc:creator><dc:creator>Jianrong Li</dc:creator><dc:creator>Zhengqing Ouyang</dc:creator><dc:creator>Chuan He</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-023-02109-8</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-18; | doi:10.1038/s41587-023-02109-8</dc:source>
+            <dc:date>2024-01-18</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02109-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02109-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02101-2">
+            <title><![CDATA[First self-amplifying mRNA vaccine approved]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02101-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 17 January 2024; <a href="https://www.nature.com/articles/s41587-023-02101-2">doi:10.1038/s41587-023-02101-2</a></p>First self-amplifying mRNA vaccine approved]]></content:encoded>
+            <dc:title><![CDATA[First self-amplifying mRNA vaccine approved]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41587-023-02101-2</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-17; | doi:10.1038/s41587-023-02101-2</dc:source>
+            <dc:date>2024-01-17</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02101-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02101-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02113-y">
+            <title><![CDATA[<i>N</i><sup>1</sup>-methylpseudouridylation affects the fidelity of mRNA translation]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02113-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 17 January 2024; <a href="https://www.nature.com/articles/s41587-023-02113-y">doi:10.1038/s41587-023-02113-y</a></p><i>N</i><sup>1</sup>-methylpseudouridylation affects the fidelity of mRNA translation]]></content:encoded>
+            <dc:title><![CDATA[<i>N</i><sup>1</sup>-methylpseudouridylation affects the fidelity of mRNA translation]]></dc:title>
+            <dc:creator>Rong Li</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-023-02113-y</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-17; | doi:10.1038/s41587-023-02113-y</dc:source>
+            <dc:date>2024-01-17</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02113-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02113-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02104-z">
+            <title><![CDATA[Denmark invests in mucosal vaccines]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02104-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 17 January 2024; <a href="https://www.nature.com/articles/s41587-023-02104-z">doi:10.1038/s41587-023-02104-z</a></p>Denmark invests in mucosal vaccines]]></content:encoded>
+            <dc:title><![CDATA[Denmark invests in mucosal vaccines]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41587-023-02104-z</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-17; | doi:10.1038/s41587-023-02104-z</dc:source>
+            <dc:date>2024-01-17</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02104-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02104-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02102-1">
+            <title><![CDATA[Top biopharmas’ zero-carbon drive]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02102-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 17 January 2024; <a href="https://www.nature.com/articles/s41587-023-02102-1">doi:10.1038/s41587-023-02102-1</a></p>Top biopharmas’ zero-carbon drive]]></content:encoded>
+            <dc:title><![CDATA[Top biopharmas’ zero-carbon drive]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41587-023-02102-1</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-17; | doi:10.1038/s41587-023-02102-1</dc:source>
+            <dc:date>2024-01-17</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02102-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02102-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02116-9">
+            <title><![CDATA[Live cell imaging of signaling networks using a conventional microscope]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02116-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 17 January 2024; <a href="https://www.nature.com/articles/s41587-023-02116-9">doi:10.1038/s41587-023-02116-9</a></p>Live cell imaging of signaling networks using a conventional microscope]]></content:encoded>
+            <dc:title><![CDATA[Live cell imaging of signaling networks using a conventional microscope]]></dc:title>
+            <dc:creator>Anahita Bishop</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-023-02116-9</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-17; | doi:10.1038/s41587-023-02116-9</dc:source>
+            <dc:date>2024-01-17</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02116-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02116-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-023-02093-z">
+            <title><![CDATA[Biotech news from around the world]]></title>
+            <link>https://www.nature.com/articles/s41587-023-02093-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 17 January 2024; <a href="https://www.nature.com/articles/s41587-023-02093-z">doi:10.1038/s41587-023-02093-z</a></p>Biotech news from around the world]]></content:encoded>
+            <dc:title><![CDATA[Biotech news from around the world]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41587-023-02093-z</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2024-01-17; | doi:10.1038/s41587-023-02093-z</dc:source>
+            <dc:date>2024-01-17</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-023-02093-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-023-02093-z</prism:url>
+        </item>
+    
+</rdf:RDF>
