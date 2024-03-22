@@ -1,6 +1,9 @@
+import os
 from metagpt.logs import logger
 from metagpt.actions.action import Action
-from metagpt.config import CONFIG
+from metagpt.configs import workspace_config
+import metagpt.config2
+from metagpt.config2 import Config
 
 import aiohttp
 from bs4 import BeautifulSoup
@@ -166,7 +169,8 @@ class pushOSS_to_hexo(Action):
 
     async def run(self, article: str ):
         # get today's date with format like 2024-01-22
-        repo = CONFIG.get("HEXO_LOCAL_DIR")
+        #repo = CONFIG.get("HEXO_LOCAL_DIR")
+        repo = os.environ['HEXO_LOCAL_DIR']
 
         today = date.today().strftime("%Y-%m-%d")
         # Run bash command : hexo new block "Daily highlight"

@@ -6,7 +6,7 @@ I have recently completed the development of a code that automates the summariza
 # Usage
 
 ### 1. Install the required packages
-- [metaGPT](https://github.com/geekan/MetaGPT) >= 0.6.0
+- [metaGPT](https://github.com/geekan/MetaGPT) >= 0.7
 - [hexo](https://hexo.io)
 
 More resource for metaGPT:

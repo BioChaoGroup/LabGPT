@@ -10,7 +10,8 @@ from metagpt.actions import UserRequirement
 from metagpt.actions.action import Action
 from metagpt.actions.action_node import ActionNode
 from metagpt.schema import Message
-from bigpt.tools.web_browser_engine import WebBrowserEngine, XmlBrowserEngine # support Xml
+from metagpt.tools.web_browser_engine import WebBrowserEngine
+from bigpt.tools.web_xml_engine import WebXmlEngine # support Xml
 from metagpt.utils.common import CodeParser, any_to_str
 from pytz import BaseTzInfo
 from metagpt.logs import logger
@@ -237,17 +238,10 @@ def get_xml_outline(page):
 
         # Simplify element info to name and depth
         element_info = {"name": name, "depth": depth, "text":""}
-
-        # Check if the element has an "id" attribute
-        if "id" in element.attrs:
-            element_info["id"] = element["id"]
-
-        if "class" in element.attrs:
-            element_info["class"] = element["class"]
             
         # Optional: Fetch text content for specific tags
 
-        if name in ["title", "encode","content","date"]:
+        if name in ["publicationName", "publicationDate","content","date","Date"]:
             element_info['text'] = element.get_text(strip=True)
 
         # Add element info to outline
@@ -306,7 +300,7 @@ class WriteCrawlerCode(Action):
         return code
 
     async def _write_code4xml(self, url, query):
-        page = await XmlBrowserEngine().run(url)
+        page = await WebXmlEngine().run(url)
         outline = get_xml_outline(page)
         outline2 = "\n".join(
             f"{' '*i['depth']}{'.'.join([i['name'], *i.get('class', [])])}: {i['text'] if i['text'] else ''}"
@@ -339,7 +333,7 @@ class RunSubscription(Action):
         SubAction = self.create_sub_action_cls(urls, code, process)
         SubRole = type("SubRole", (Role,), {})
         role = SubRole()
-        role._init_actions([SubAction])
+        role.set_actions([SubAction])
         runner = SubscriptionRunner()
 
         async def callback(msg):
@@ -389,7 +383,7 @@ class RunSubscriptionImmediantlyOneTime(Action):
         # 创建 SubRole 和绑定动作
         SubRole = type("SubRole", (Role,), {})
         role = SubRole()
-        role._init_actions([SubAction])
+        role.set_actions([SubAction])
         
         msg = Message(content="直接执行")
         # 直接运行一次 SubRole 的任务，不使用 SubscriptionRunner
@@ -413,15 +407,23 @@ class RunSubscriptionImmediantlyOneTime(Action):
                 #if len(urls) == 1:
                 #    pages = [pages]
 
-                data = []
+                articles = []
                 for url in urls[::-1]:
                     if url.endswith('rss'):
-                        page = await XmlBrowserEngine().run(url)
+                        page = await WebXmlEngine().run(url)
                         soup = _get_soup(page.inner_text)
-                        data.append(getattr(modules[url], "parse")(soup))
+                        try:
+                            articles.append(getattr(modules[url], "parse")(soup))
+                        except:
+                            logger.info(f"Data from url not found")
                     else:
                         page = await WebBrowserEngine().run(url)
-                        data.append(getattr(modules[url], "parse")(page.soup))
-                logger.info(f"Summarized Article List:\n{data}")
-                return await self.llm.aask(TRENDING_ANALYSIS_PROMPT.format(process=process, data=data))
+                        try:
+                            articles.append(getattr(modules[url], "parse")(page.soup))
+                        except:
+                            logger.info(f"Data from url not found")
+                str_articles = '\n'.join(str(x) for x in articles)
+                FORMAT_PROMPT = TRENDING_ANALYSIS_PROMPT.format(process=process, data=str_articles)
+                logger.info(f"Asking:\n{FORMAT_PROMPT}")
+                return await self.llm.aask(FORMAT_PROMPT)
         return SubAction

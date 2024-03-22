@@ -9,7 +9,9 @@ from aiocron import crontab
 from metagpt.actions import UserRequirement
 from metagpt.roles import Role
 from metagpt.schema import Message
-from metagpt.tools.web_browser_engine import WebBrowserEngine
+#from metagpt.tools.web_browser_engine import WebBrowserEngine
+#from bigpt.tools.web_xml_engine import WebXmlEngine # support Xml
+
 from metagpt.utils.common import CodeParser, any_to_str
 from metagpt.utils.parse_html import _get_soup
 from pytz import BaseTzInfo
@@ -29,7 +31,7 @@ class BlogPublisher(Role):
     def __init__(self, **kwargs) -> None:
         super().__init__(**kwargs)
 
-        self._init_actions([pushOSS_to_hexo])
+        self.set_actions([pushOSS_to_hexo])
         self._watch([RunSubscriptionImmediantlyOneTime])
         
         
@@ -43,7 +45,7 @@ class CrawlerEngineer(Role):
     def __init__(self, **kwargs) -> None:
         super().__init__(**kwargs)
 
-        self._init_actions([WriteCrawlerCode])
+        self.set_actions([WriteCrawlerCode])
         self._watch([ParseSubRequirement])
 
 # 定义订阅助手角色
@@ -59,7 +61,7 @@ class SubscriptionAssistant(Role):
         super().__init__(**kwargs)
 
         #self._init_actions([ParseSubRequirement, RunSubscription])
-        self._init_actions([ParseSubRequirement, RunSubscriptionImmediantlyOneTime])
+        self.set_actions([ParseSubRequirement, RunSubscriptionImmediantlyOneTime])
         self._watch([UserRequirement, WriteCrawlerCode])
 
     async def _think(self) -> bool:
